@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"outFile": "build/app.js",
+		"composite": true,
+		"module": "system",
+		"moduleResolution": "node",
+		"target": "esnext",
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"strict": true,
+		"baseUrl": "./",
+		"rootDir": ".",
+		"declaration": true,
+		"declarationMap": true,
+		"stripInternal": true,
+		"incremental": true,
+		"preserveConstEnums": true,
+		"lib": [
+			"dom",
+			"esnext",
+			"esnext.array",
+			"esnext.asynciterable"
+		]
+	},
+	"include": [
+		"node_modules/@squaresapp/rawjs/*.ts",
+		"src/**/*.ts"
+	]
+}

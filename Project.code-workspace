@@ -1,0 +1,65 @@
+ {
+	"folders": [
+		{
+			"path": ".",
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.DS_Store": true,
+			"**/node_modules": true,
+			"**/package-lock.json": true,
+			"build/app.*": true
+		},
+		"search.exclude": {
+			"**/.git": true,
+			"**/.DS_Store": true,
+			"**/build": true,
+			"**/node_modules": true,
+			"**/package-lock.json": true,
+			"build/app.*": true
+		},
+		"task.allowAutomaticTasks": "on",
+	},
+	"launch": {
+		"configurations": [
+			{
+				"name": "Launch",
+				"type": "chrome",
+				"request": "launch",
+				"port": 9222,
+				"url": "http://localhost:4111/",
+				"webRoot": "${workspaceFolder}",
+			}
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Compile Library",
+				"type": "shell",
+				"command": "tsc",
+				"args": [
+					"--build",
+					"--watch"
+				],
+				"options": {
+					"cwd": "${workspaceRoot}"
+				},
+				"problemMatcher": [
+					"$tsc"
+				],
+				"runOptions": {
+					"runOn": "folderOpen"
+				},
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"isBackground": true
+			}
+		]
+	}
+}
