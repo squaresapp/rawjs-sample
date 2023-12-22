@@ -3,7 +3,7 @@
 
 This repository demonstrates a minimal RawJS project setup. You can clone this repository in order to get a good starting point for a front-end project using RawJS.
 
-The project demonstrates basic app development and project organization using RawJS, hierarchial routing (via Rawter), `vite` as the build server, and a code-workspace configured for debugging. Be sure to open the code-workspace file into VS code in order to get step debugging to work.
+The project demonstrates basic app development and project organization using RawJS, hierarchial routing with support for back and forward buttons (via [Rawter](https://github.com/paul-go/rawter)), `vite` as the build server, and a code-workspace configured for debugging. Be sure to open the code-workspace file into VS code in order to get step debugging to work.
 
 ## Online Demo
 
