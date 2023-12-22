@@ -11,7 +11,7 @@ namespace App
 	export class RootComponent
 	{
 		readonly head;
-		private readonly animalsContainer;
+		private readonly componentContainer;
 		private readonly buttons;
 		
 		/** */
@@ -29,8 +29,8 @@ namespace App
 							Rawter.on("/reds", () =>
 							{
 								this.buttons.select(e);
-								this.animalsContainer.replaceChildren(
-									new ColorsComponent(0).head
+								this.componentContainer.replaceChildren(
+									new ColorsComponent("reds", 0).head
 								);
 							}),
 						],
@@ -39,8 +39,8 @@ namespace App
 							Rawter.on("/greens", () =>
 							{
 								this.buttons.select(e);
-								this.animalsContainer.replaceChildren(
-									new ColorsComponent(130).head
+								this.componentContainer.replaceChildren(
+									new ColorsComponent("greens", 130).head
 								);
 							})
 						],
@@ -49,20 +49,20 @@ namespace App
 							Rawter.on("/blues", () =>
 							{
 								this.buttons.select(e);
-								this.animalsContainer.replaceChildren(
-									new ColorsComponent(220).head
+								this.componentContainer.replaceChildren(
+									new ColorsComponent("blues", 220).head
 								);
 							})
 						]
 					),
 				),
-				this.animalsContainer = raw.div(
+				this.componentContainer = raw.div(
 					// Strings are interpreted as class names in RawJS.
 					// It  can be good practise to annotate anonymous <div> elements like
 					// this one with descriptive class names for no reason other than
 					// debugging purposes, so that when you're in the element inspector,
 					// you can more easily trace a <div> back to its location in your source.
-					"animals-container"
+					"component-container"
 				)
 			);
 		}
