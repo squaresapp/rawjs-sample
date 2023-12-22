@@ -29,8 +29,8 @@
 				"type": "chrome",
 				"request": "launch",
 				"port": 9222,
-				"url": "http://localhost:4111/",
-				"webRoot": "${workspaceFolder}",
+				"url": "http://localhost:4321/",
+				"webRoot": "${workspaceFolder}/build",
 			}
 		]
 	},

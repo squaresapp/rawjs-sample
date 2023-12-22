@@ -1,7 +1,7 @@
 {
 	"name": "raw-project",
 	"author": "Paul Gordon",
-	"description": "A library designed to support the field drawing capability of the Homello form builder",
+	"description": "A sample project to demonstrate the simplicity of RawJS apps",
 	"version": "1.0.4",
 	"license": "MIT",
 	"files": [
@@ -12,9 +12,10 @@
 	],
 	"scripts": {
 		"test": "exit 0",
-		"serve": "npx vite --host --port 4111"
+		"serve": "cd build && npx vite --host --cors --port 4321"
 	},
 	"dependencies": {
-		"@squaresapp/rawjs": "^1.3.7"
+		"@squaresapp/rawjs": "^1.3.7",
+		"rawter": "^1.0.6"
 	}
 }
