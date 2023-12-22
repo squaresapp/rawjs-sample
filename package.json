@@ -16,6 +16,6 @@
 	},
 	"dependencies": {
 		"@squaresapp/rawjs": "^1.3.7",
-		"rawter": "^1.0.6"
+		"rawter": "^1.0.7"
 	}
 }
