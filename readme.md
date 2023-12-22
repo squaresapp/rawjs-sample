@@ -3,7 +3,12 @@
 
 This repository demonstrates a minimal RawJS project setup. You can clone this repository in order to get a good starting point for a front-end project using RawJS.
 
-The project demonstrates basic app development using RawJS, hierarchial routing (via Rawter), `vite` as the build server, and a code-workspace configured for debugging. Be sure to open the code-workspace file into VS code in order to get step debugging to work.
+The project demonstrates basic app development and project organization using RawJS, hierarchial routing (via Rawter), `vite` as the build server, and a code-workspace configured for debugging. Be sure to open the code-workspace file into VS code in order to get step debugging to work.
+
+## Online Demo
+
+The demo project is basic CSS color viewer. You can see an online demo of the project at
+(https://rawjssample.pages.dev)[https://rawjssample.pages.dev]
 
 ## Trade-offs
 
