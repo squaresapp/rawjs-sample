@@ -42,6 +42,7 @@ namespace App
 		const root = new RootComponent();
 		document.body.append(root.head);
 		
+		// Bind the routing to the path displayed in the address bar.
 		Rawter.go();
 	}
 	
