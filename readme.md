@@ -8,7 +8,7 @@ The project demonstrates basic app development and project organization using Ra
 ## Online Demo
 
 The demo project is basic CSS color viewer. You can see an online demo of the project at
-(https://rawjssample.pages.dev)[https://rawjssample.pages.dev]
+[https://rawjssample.pages.dev](https://rawjssample.pages.dev)
 
 ## Trade-offs
 
