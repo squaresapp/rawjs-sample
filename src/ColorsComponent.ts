@@ -32,14 +32,15 @@ namespace App
 					hue += 360;
 				
 				const sat = Math.round(Math.random() * 100);
-				const light = Math.round(Math.random() * 100);
+				const light = Math.max(20, Math.round(Math.random() * 100));
 				
 				this.colorsContainer.append(raw.div(
 					{
-						display: "inline-block",
+						float: "left",
 						width: "300px",
 						height: "300px",
-						border: "5px solid white",
+						border: "1px solid black",
+						borderWidth: "1px 1px 0 0 ",
 						backgroundImage: `linear-gradient(
 							-45deg,
 							hsl(${hue}, ${sat}%, ${light}%),

@@ -26,6 +26,7 @@ namespace App
 					height: "fit-content",
 					boxShadow: "0 0 100px 10000px rgba(0, 0, 0, 0.5)",
 					backgroundColor: "white",
+					color: "black",
 					zIndex: 1
 				},
 				raw.div(

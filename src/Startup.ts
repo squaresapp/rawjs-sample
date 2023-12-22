@@ -26,8 +26,12 @@ namespace App
 					// times with different values for different browsers.
 					minHeight: ["100dvh", "100vh"]
 				},
+				"HTML", {
+					backgroundColor: "black",
+				},
 				"BODY", {
 					fontFamily: "sans-serif",
+					color: "white",
 				}
 			)
 		);
