@@ -41,6 +41,8 @@ namespace App
 		// root's .head element is removed from the DOM.
 		const root = new RootComponent();
 		document.body.append(root.head);
+		
+		Rawter.go();
 	}
 	
 	window.addEventListener("DOMContentLoaded", startup);
